@@ -6,11 +6,11 @@ public class tile : MonoBehaviour {
 
 
     private Color startColor;
+
     public bool walkable = true; 
     public bool current = false;
     public bool target = false;
     public bool selectable = false;
-
 
     public List<tile> adjacencyList = new List<tile>();
 
@@ -31,7 +31,7 @@ public class tile : MonoBehaviour {
     {
         if (current)
         {
-            GetComponent<Renderer>().material.color = Color.black;
+            GetComponent<Renderer>().material.color = startColor;
         }
         else if (target)
         {

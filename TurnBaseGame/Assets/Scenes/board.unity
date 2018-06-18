@@ -3016,6 +3016,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24d5e4572805ecb49a66af9041ced2c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moving: 0
+  move: 1
+  moveSpeed: 2
+  jumpHight: 2
 --- !u!136 &2044199433
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3078,8 +3082,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2044199431}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3, y: 0.725, z: -3}
-  m_LocalScale: {x: 1.3499999, y: 0.45, z: 1.3499999}
+  m_LocalPosition: {x: 3, y: 1.2, z: -3}
+  m_LocalScale: {x: 0.9, y: 0.9, z: 0.9}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
