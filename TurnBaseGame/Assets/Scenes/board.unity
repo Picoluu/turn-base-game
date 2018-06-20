@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.43667546, g: 0.48427135, b: 0.5645225, a: 1}
+  m_IndirectSpecularColor: {r: 0.4366757, g: 0.48427194, b: 0.5645252, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -164,6 +164,9 @@ MonoBehaviour:
   visited: 0
   parent: {fileID: 0}
   distance: 0
+  f: 0
+  g: 0
+  h: 0
 --- !u!65 &20233351
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -269,6 +272,9 @@ MonoBehaviour:
   visited: 0
   parent: {fileID: 0}
   distance: 0
+  f: 0
+  g: 0
+  h: 0
 --- !u!65 &147386341
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -388,6 +394,111 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!1 &174287245
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 174287250}
+  - component: {fileID: 174287249}
+  - component: {fileID: 174287248}
+  - component: {fileID: 174287247}
+  - component: {fileID: 174287246}
+  m_Layer: 0
+  m_Name: NPC
+  m_TagString: NPC
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &174287246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 174287245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1a8afa9df9194f44b7787a169a80131, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  turn: 0
+  moving: 0
+  NpcMove: 1
+  move: 2
+  moveSpeed: 2
+  jumpHight: 2
+  actualTargetTile: {fileID: 0}
+--- !u!136 &174287247
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 174287245}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &174287248
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 174287245}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 2100000, guid: 5049ba0b428fae64396439d4061f636b, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &174287249
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 174287245}
+  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &174287250
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 174287245}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -3, y: 1.2, z: -3}
+  m_LocalScale: {x: 0.90000004, y: 0.9, z: 0.90000004}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &260445267
 GameObject:
   m_ObjectHideFlags: 0
@@ -439,6 +550,9 @@ MonoBehaviour:
   visited: 0
   parent: {fileID: 0}
   distance: 0
+  f: 0
+  g: 0
+  h: 0
 --- !u!65 &260445270
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -634,6 +748,9 @@ MonoBehaviour:
   visited: 0
   parent: {fileID: 0}
   distance: 0
+  f: 0
+  g: 0
+  h: 0
 --- !u!65 &304705777
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -762,6 +879,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 421938396}
+  - component: {fileID: 421938397}
   m_Layer: 0
   m_Name: board
   m_TagString: Untagged
@@ -787,6 +905,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &421938397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 421938395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51db5b82fae69cc4ba886784a72ebb56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &438766794
 GameObject:
   m_ObjectHideFlags: 0
@@ -838,6 +967,9 @@ MonoBehaviour:
   visited: 0
   parent: {fileID: 0}
   distance: 0
+  f: 0
+  g: 0
+  h: 0
 --- !u!65 &438766797
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -943,6 +1075,9 @@ MonoBehaviour:
   visited: 0
   parent: {fileID: 0}
   distance: 0
+  f: 0
+  g: 0
+  h: 0
 --- !u!65 &475077875
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1048,6 +1183,9 @@ MonoBehaviour:
   visited: 0
   parent: {fileID: 0}
   distance: 0
+  f: 0
+  g: 0
+  h: 0
 --- !u!65 &526747666
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1153,6 +1291,9 @@ MonoBehaviour:
   visited: 0
   parent: {fileID: 0}
   distance: 0
+  f: 0
+  g: 0
+  h: 0
 --- !u!65 &539123187
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1258,6 +1399,9 @@ MonoBehaviour:
   visited: 0
   parent: {fileID: 0}
   distance: 0
+  f: 0
+  g: 0
+  h: 0
 --- !u!65 &547681410
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1363,6 +1507,9 @@ MonoBehaviour:
   visited: 0
   parent: {fileID: 0}
   distance: 0
+  f: 0
+  g: 0
+  h: 0
 --- !u!65 &643956283
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1468,6 +1615,9 @@ MonoBehaviour:
   visited: 0
   parent: {fileID: 0}
   distance: 0
+  f: 0
+  g: 0
+  h: 0
 --- !u!65 &650096261
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1573,6 +1723,9 @@ MonoBehaviour:
   visited: 0
   parent: {fileID: 0}
   distance: 0
+  f: 0
+  g: 0
+  h: 0
 --- !u!65 &807501200
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1678,6 +1831,9 @@ MonoBehaviour:
   visited: 0
   parent: {fileID: 0}
   distance: 0
+  f: 0
+  g: 0
+  h: 0
 --- !u!65 &889532957
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1783,6 +1939,9 @@ MonoBehaviour:
   visited: 0
   parent: {fileID: 0}
   distance: 0
+  f: 0
+  g: 0
+  h: 0
 --- !u!65 &926108776
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1888,6 +2047,9 @@ MonoBehaviour:
   visited: 0
   parent: {fileID: 0}
   distance: 0
+  f: 0
+  g: 0
+  h: 0
 --- !u!65 &928660370
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1993,6 +2155,9 @@ MonoBehaviour:
   visited: 0
   parent: {fileID: 0}
   distance: 0
+  f: 0
+  g: 0
+  h: 0
 --- !u!65 &1150199133
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2098,6 +2263,9 @@ MonoBehaviour:
   visited: 0
   parent: {fileID: 0}
   distance: 0
+  f: 0
+  g: 0
+  h: 0
 --- !u!65 &1221559935
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2203,6 +2371,9 @@ MonoBehaviour:
   visited: 0
   parent: {fileID: 0}
   distance: 0
+  f: 0
+  g: 0
+  h: 0
 --- !u!65 &1262778613
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2308,6 +2479,9 @@ MonoBehaviour:
   visited: 0
   parent: {fileID: 0}
   distance: 0
+  f: 0
+  g: 0
+  h: 0
 --- !u!65 &1345099062
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2413,6 +2587,9 @@ MonoBehaviour:
   visited: 0
   parent: {fileID: 0}
   distance: 0
+  f: 0
+  g: 0
+  h: 0
 --- !u!65 &1398315978
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2518,6 +2695,9 @@ MonoBehaviour:
   visited: 0
   parent: {fileID: 0}
   distance: 0
+  f: 0
+  g: 0
+  h: 0
 --- !u!65 &1450294096
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2623,6 +2803,9 @@ MonoBehaviour:
   visited: 0
   parent: {fileID: 0}
   distance: 0
+  f: 0
+  g: 0
+  h: 0
 --- !u!65 &1473058405
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2761,6 +2944,9 @@ MonoBehaviour:
   visited: 0
   parent: {fileID: 0}
   distance: 0
+  f: 0
+  g: 0
+  h: 0
 --- !u!65 &1876568294
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2932,6 +3118,9 @@ MonoBehaviour:
   visited: 0
   parent: {fileID: 0}
   distance: 0
+  f: 0
+  g: 0
+  h: 0
 --- !u!65 &2026574497
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3016,10 +3205,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24d5e4572805ecb49a66af9041ced2c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  turn: 0
   moving: 0
+  NpcMove: 1
   move: 1
   moveSpeed: 2
   jumpHight: 2
+  actualTargetTile: {fileID: 0}
 --- !u!136 &2044199433
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3139,6 +3331,9 @@ MonoBehaviour:
   visited: 0
   parent: {fileID: 0}
   distance: 0
+  f: 0
+  g: 0
+  h: 0
 --- !u!65 &2072446471
 BoxCollider:
   m_ObjectHideFlags: 0
