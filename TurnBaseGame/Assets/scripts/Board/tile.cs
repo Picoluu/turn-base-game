@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class tile : MonoBehaviour {
+public class Tile : MonoBehaviour {
 
 
     private Color startColor;
@@ -12,12 +12,21 @@ public class tile : MonoBehaviour {
     public bool target = false;
     public bool selectable = false;
 
-    public List<tile> adjacencyList = new List<tile>();
+    public List<Tile> adjacencyList = new List<Tile>();
 
     //Needed BFS (a path finding algorithem)
     public bool visited = false;
-    public tile parent = null;
+    public Tile parent = null;
     public int distance = 0;
+
+
+    // Needed for Astar
+    // f = g + h
+    public float f = 0;
+    // g is the cost from the perent to the corrent tile 
+    public float g = 0;
+    // h is the cost of the current tile to the destanation
+    public float h = 0;
 
 	
 	void Start ()
@@ -65,36 +74,40 @@ public class tile : MonoBehaviour {
      visited = false;
      parent = null;
      distance = 0;
+
+     // Veruables Astar
+
+        f = g = h = 0;
     }
 
-    // finds adjacent tiles to the selected tile 
-    public void FindNeighbors()
+    // sets adjacent Tiles to the selected Tile 
+    public void FindNeighbors(Tile target)
     {
         Reset();
-        CheckTile(Vector3.forward * 1.5f);
-        CheckTile(-Vector3.forward * 1.5f);
-        CheckTile(Vector3.right * 1.5f);
-        CheckTile(-Vector3.right * 1.5f);
+        CheckTile(Vector3.forward * 1.5f, target);
+        CheckTile(-Vector3.forward * 1.5f, target);
+        CheckTile(Vector3.right * 1.5f, target);
+        CheckTile(-Vector3.right * 1.5f, target);
     }
 
-    // finds adjacent tiles to the selected tile
-    public void CheckTile(Vector3 direction)
+    // func that finds adjacent Tiles
+    public void CheckTile(Vector3 direction, Tile target)
     {
-        // checks for the adjacent tiles 
+        // checks for the adjacent Tiles 
         Vector3 halfExtents = new Vector3(0.375f, 0.375f, 0.375f);
         Collider[] colliders = Physics.OverlapBox(transform.position + direction, halfExtents);
 
-
+        
         foreach (Collider item in colliders)
         {
-            tile tiile = item.GetComponent<tile>();
-            if (tiile !=  null && tiile.walkable)
+            Tile tile = item.GetComponent<Tile>();
+            if (tile !=  null && tile.walkable)
             {
                 RaycastHit hit;
 
-                if (!Physics.Raycast(tiile.transform.position,Vector3.up, out hit , 1.5f))
+                if (!Physics.Raycast(tile.transform.position,Vector3.up, out hit , 1.5f) || (tile == target) )
                 {
-                    adjacencyList.Add(tiile);
+                    adjacencyList.Add(tile);
                 }
 
                 

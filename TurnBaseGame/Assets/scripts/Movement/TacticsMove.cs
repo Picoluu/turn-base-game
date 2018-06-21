@@ -4,14 +4,18 @@ using UnityEngine;
 
 public class TacticsMove : MonoBehaviour {
 
-    List<tile> selectableTiles = new List<tile>();
-    GameObject[] tiles;
 
-    Stack<tile> path = new Stack<tile>();
-    tile currentTile;
+    public bool turn = false;
+
+    List<Tile> selectableTiles = new List<Tile>();
+    GameObject[] Tiles;
+
+    Stack<Tile> path = new Stack<Tile>();
+    Tile currentTile;
 
     public bool moving = false;
 
+    public int NpcMove = 1;
     public int move = 2;
     public float moveSpeed = 2f;
     public float jumpHight = 2f;
@@ -22,15 +26,20 @@ public class TacticsMove : MonoBehaviour {
 
     float halfHeight = 0f;
 
+
+    //Astar
+    public Tile actualTargetTile;
+
     protected void Init()
     {
-        tiles = GameObject.FindGameObjectsWithTag("Tile");
+        Tiles = GameObject.FindGameObjectsWithTag("Tile");
 
         halfHeight = GetComponent<Collider>().bounds.extents.y;
 
+        TurnManager.AddUnit(this);
     }
 
-    // func that finds the tile currently under the player our the NPC
+    // func that finds the Tile currently under the player our the NPC
 
     public void GetCurrentTile()
     {
@@ -38,62 +47,62 @@ public class TacticsMove : MonoBehaviour {
         currentTile.current = true;
     }
 
-       public tile GetTargetTile(GameObject target)
+       public Tile GetTargetTile(GameObject target)
        {
         RaycastHit Hit;
-        tile tiile = null;
+        Tile tile = null;
         if (Physics.Raycast(target.transform.position,-Vector3.up, out Hit))
         {
-            tiile = Hit.collider.GetComponent<tile>();
+            tile = Hit.collider.GetComponent<Tile>();
             
         }
 
-        return tiile;
+        return tile;
        }
 
-    // finds adjacent tiles to selected tiles 
+    // finds adjacent Tiles to selected Tiles 
 
-    public void ComputeAdjacencyLists()
+    public void ComputeAdjacencyLists(Tile target)
     {
 
-        foreach (GameObject tiile in tiles)
+        foreach (GameObject tile in Tiles)
         {
-            tile t = tiile.GetComponent<tile>();
-            t.FindNeighbors();
+            Tile t = tile.GetComponent<Tile>();
+            t.FindNeighbors(target);
         }
         
     }
 
-    //finds the selectable tiles
+    //finds the selectable Tiles
 
     public void FindSelectableTiles()
     {
-        ComputeAdjacencyLists();
+        ComputeAdjacencyLists(null);
         GetCurrentTile();
 
-        Queue<tile> process = new Queue<tile>();
+        Queue<Tile> process = new Queue<Tile>();
 
         process.Enqueue(currentTile);
         currentTile.visited = true;
-        // currentTile.parent = ?? leave as null
+        
 
         while (process.Count > 0)
         {
-            tile t = process.Dequeue();
+            Tile t = process.Dequeue();
 
             selectableTiles.Add(t);
             t.selectable = true;
             if (t.distance < move)
             {
 
-                foreach (tile tiile in t.adjacencyList)
+                foreach (Tile tile in t.adjacencyList)
                 {
-                    if (!tiile.visited)
+                    if (!tile.visited)
                     {
-                        tiile.parent = t;
-                        tiile.visited = true;
-                        tiile.distance = 1 + t.distance;
-                        process.Enqueue(tiile);
+                        tile.parent = t;
+                        tile.visited = true;
+                        tile.distance = 1 + t.distance;
+                        process.Enqueue(tile);
                     }
 
                 }
@@ -102,15 +111,15 @@ public class TacticsMove : MonoBehaviour {
 
     }
 
-    // character movement throw the tiles 
+    // character movement throw the Tiles 
 
-    public void MoveToTile(tile tiile)
+    public void MoveToTile(Tile tile)
     {
         path.Clear();
-        tiile.target = true;
+        tile.target = true;
         moving = true;
 
-        tile next = tiile;
+        Tile next = tile;
         while (next != null )
         {
             path.Push(next);
@@ -122,10 +131,10 @@ public class TacticsMove : MonoBehaviour {
     {
         if (path.Count > 0)
         {
-            tile t = path.Peek();
+            Tile t = path.Peek();
             Vector3 target = t.transform.position;
 
-            //calculate the units position on top of the target tile 
+            //calculate the units position on top of the target Tile 
             target.y += halfHeight + t.GetComponent<Collider>().bounds.extents.y;
 
             if (Vector3.Distance(transform.position, target) >= 0.05f)
@@ -139,7 +148,7 @@ public class TacticsMove : MonoBehaviour {
             }
             else
             {
-                //tile center reached
+                //Tile center reached
                 transform.position = target;
                 path.Pop();
 
@@ -150,11 +159,11 @@ public class TacticsMove : MonoBehaviour {
         {
             RemoveSelectableTiles();
             moving = false;
-
+            TurnManager.EndTurn();
         }
     }
 
-    // remove the selecteble tiles while moving
+    // remove the selecteble Tiles while moving
 
     protected void RemoveSelectableTiles()
     {
@@ -163,9 +172,9 @@ public class TacticsMove : MonoBehaviour {
             currentTile.current = false;
             currentTile = null;
         }
-        foreach (tile tiile in selectableTiles)
+        foreach (Tile tile in selectableTiles)
         {
-            tiile.Reset();
+            tile.Reset();
         }
 
         selectableTiles.Clear();
@@ -182,4 +191,147 @@ public class TacticsMove : MonoBehaviour {
     {
         velocity = heading * moveSpeed;
     }
+
+
+    // func that reterns the tile with the lowest vauled tile in the list 
+    protected Tile FindLowestF(List<Tile> list)
+    {
+        Tile lowest = list[0];
+
+        foreach (Tile t in list)
+        {
+            if (t.f < lowest.f)
+            {
+                lowest = t;
+            }
+
+        }
+
+        // removing the lowest from the list 
+        list.Remove(lowest);
+
+        return lowest;
+    }
+
+    // finding the actual Target Tile were the target stands
+
+    protected Tile FindEndTile(Tile t)
+    {
+        Stack<Tile> tempPath = new Stack<Tile>();
+
+        Tile next = t.parent;
+        while (next != null)
+        {
+            tempPath.Push(next);
+            next = next.parent;
+        }
+
+        if (tempPath.Count <= NpcMove)
+        {
+            return t.parent;
+        }
+
+        Tile endTile = null;
+
+        for (int i = 0; i <= NpcMove; i++)
+        {
+            endTile = tempPath.Pop();
+        }
+
+        return endTile;
+    }
+    
+
+    // Astar algotrithem
+    protected void FindPath(Tile target)
+    {
+        ComputeAdjacencyLists(target);
+        GetCurrentTile();
+
+        // tiles that have not been processed 
+        List<Tile> openList = new List<Tile>();
+        // tiles that have been processed
+        List<Tile> closedList = new List<Tile>();
+
+        openList.Add(currentTile);
+        currentTile.h = Vector3.SqrMagnitude(target.transform.position  - currentTile.transform.position);
+        currentTile.f = currentTile.h;
+
+
+        // procesing the open list 
+        while (openList.Count > 0)
+        {
+            //finding the lost value f in all the tiles in the open list 
+            Tile t = FindLowestF(openList);
+            // to prevent processing the same target a secend time we remove it to the close list 
+            closedList.Add(t);
+
+            // cheaking if the lowest value tile we found is the target tile 
+            if (t == target)
+            {
+                //insted of moveing to the end tile (t) we will move to the tile infront of it 
+              actualTargetTile = FindEndTile(t);
+              MoveToTile(actualTargetTile);
+                return;
+            }
+
+            // processing the adjacent tiles to t
+            foreach (Tile tile in t.adjacencyList)
+            {
+                // the tile is in a closed list then do nothing 
+                if (closedList.Contains(tile))
+                {
+                    // do nothing its already processed
+                }
+                // on an open list 
+                else if (openList.Contains(tile))
+                {
+                    // cheaks if there is a faster way by compering the current position to a new position
+                    // if it is set is as the new target 
+                    float tempG =t.g + Vector3.Distance(tile.transform.position, t.transform.position);
+
+
+                    if (tempG < tile.g)
+                    {
+                        tile.parent = t;
+
+                        tile.g = tempG;
+                        tile.f = tile.g + tile.h;
+                    }
+
+
+                }
+                // not on both lists // if so we caculate its costs and add it to the open list 
+                else
+                {
+                    tile.parent = t;
+
+                    tile.g = t.g + Vector3.Distance(tile.transform.position, t.transform.position);
+                    tile.h = Vector3.SqrMagnitude(target.transform.position - tile.transform.position);
+                    tile.f = tile.g + tile.h;
+
+                    openList.Add(tile);
+                }
+
+            }
+
+
+        }
+        // todo what do you do if there is no path to the target tile 
+    }
+
+
+
+    public void BeginTurn()
+    {
+        turn = true;
+    }
+
+    public void EndTurn()
+    {
+        turn = false;
+    }
+    // todo: end turn after an action not movement
+
+
 }

@@ -13,6 +13,12 @@ public class playerMove : TacticsMove {
 	
 	void Update ()
     {
+        if (!turn)
+        {
+            return;
+        }
+
+
         if (!moving)
         {
             FindSelectableTiles();
@@ -36,7 +42,7 @@ public class playerMove : TacticsMove {
             {
                 if (hit.collider.tag == "Tile")
                 {
-                    tile t = hit.collider.GetComponent<tile>();
+                    Tile t = hit.collider.GetComponent<Tile>();
 
                     if (t.selectable)
                     {

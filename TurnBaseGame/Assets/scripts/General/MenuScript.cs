@@ -32,7 +32,7 @@ public class MenuScript
 
         foreach (GameObject t in tiles)
         {
-            t.AddComponent<tile>();
+            t.AddComponent<Tile>();
         }
 
     }
