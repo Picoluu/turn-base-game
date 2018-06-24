@@ -68,8 +68,7 @@ public class TurnManager : MonoBehaviour {
     }
 
     // this func will allow the units to add themselves to the Dictionary units
-    // todo create a new class called characters and change the AddUnit func to intake a Character type not a TacticsMove type
-    //
+    // change this to a Character type
     public static void AddUnit(TacticsMove unit)
     {
         //this list will be a part of the Dictionary 

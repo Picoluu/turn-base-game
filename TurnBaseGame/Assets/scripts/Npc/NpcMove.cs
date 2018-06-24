@@ -24,7 +24,7 @@ public class NpcMove : TacticsMove
         {
             FindNearestTarget();
             CalculatePath();
-           // FindSelectableTiles();
+            FindSelectableTiles();
             actualTargetTile.target = true;
            
         }
