@@ -31,8 +31,11 @@ public class Inventory : MonoBehaviour {
 
     public List<Hero> heroes = new List<Hero>();
 
+   
+
     public bool AddHero(Hero hero)
     {
+       
         if (heroes.Count >= space)
         {
             return false;

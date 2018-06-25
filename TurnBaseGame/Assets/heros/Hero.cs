@@ -6,17 +6,18 @@ using UnityEngine;
 public class Hero : ScriptableObject
  {
 
-    public ActionBarSlots Slot = ActionBarSlots.NotOnActionBar;
+    public int Slot;
 
     new public string name = "New item";
     public Sprite icon = null;
 
-    public virtual void Use()
+    public void Selected()
     {
-        // useing the hero (probly equping to actionBar)
-        // add a reference to action bar andd add the hero to it 
-
-        Debug.Log("equping" + name);
+        
+            DragAndDropManager.instance.SelectedHero(this);
+            Debug.Log("Selecting" + name);
     }
-
+       
  }
+
+

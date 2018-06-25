@@ -118,5 +118,12 @@ public class Tile : MonoBehaviour {
 
 
     }
+
+
+
+    public void RemoveScript()
+    {
+        DestroyImmediate(this);
+    }
     
 }

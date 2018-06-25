@@ -38,14 +38,22 @@ public class ActionBar : MonoBehaviour {
 
     public void Equip(Hero newHero)
     {
-        int slotIndex = (int)newHero.Slot - 1;
+        int slotIndex = (int)newHero.Slot;
+        currentEquiped[slotIndex] = newHero;
+        Inventory.instance.RemoveHero(newHero);
+    }
 
-        currentEquiped[slotIndex -1] = newHero;
+
+    public void UnEquip(Hero newHero)
+    {
+        currentEquiped[newHero.Slot] = null;
+        Inventory.instance.AddHero(newHero);
+
     }
 
 }
 
-public enum ActionBarSlots {FirstHero,SecendHero,TheirdHero,ForthHero,NotOnActionBar}
+public enum ActionBarSlots {FirstHero,SecendHero,TheirdHero,ForthHero}
 
 
 

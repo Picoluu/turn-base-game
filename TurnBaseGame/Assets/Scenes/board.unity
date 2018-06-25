@@ -158,7 +158,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 20233348}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 395399300}
+  m_Script: {fileID: 631867231}
   m_Name: 
   m_EditorClassIdentifier: 
   walkable: 1
@@ -226,12 +226,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 20233348}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &52063481 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114992374973826024, guid: b7d4965d45a02744aae5cdd910c17c48,
-    type: 2}
-  m_PrefabInternal: {fileID: 1117011313}
-  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &73034525
 GameObject:
   m_ObjectHideFlags: 0
@@ -547,7 +541,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 147386338}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 395399300}
+  m_Script: {fileID: 631867231}
   m_Name: 
   m_EditorClassIdentifier: 
   walkable: 1
@@ -1035,6 +1029,7 @@ GameObject:
   - component: {fileID: 260445271}
   - component: {fileID: 260445270}
   - component: {fileID: 260445269}
+  - component: {fileID: 260445273}
   m_Layer: 0
   m_Name: Tile (3)
   m_TagString: Tile
@@ -1063,7 +1058,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 260445267}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 395399300}
+  m_Script: {fileID: 631867231}
   m_Name: 
   m_EditorClassIdentifier: 
   walkable: 1
@@ -1131,12 +1126,28 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 260445267}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &277442969 stripped
+--- !u!114 &260445273
 MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114752121906249470, guid: b7d4965d45a02744aae5cdd910c17c48,
-    type: 2}
-  m_PrefabInternal: {fileID: 1117011313}
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 260445267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 631867231}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walkable: 1
+  current: 0
+  target: 0
+  selectable: 0
+  adjacencyList: []
+  visited: 0
+  parent: {fileID: 0}
+  distance: 0
+  f: 0
+  g: 0
+  h: 0
 --- !u!1 &282840810
 GameObject:
   m_ObjectHideFlags: 0
@@ -1267,7 +1278,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 304705774}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 395399300}
+  m_Script: {fileID: 631867231}
   m_Name: 
   m_EditorClassIdentifier: 
   walkable: 1
@@ -1347,6 +1358,8 @@ GameObject:
   - component: {fileID: 332420254}
   - component: {fileID: 332420253}
   - component: {fileID: 332420257}
+  - component: {fileID: 332420258}
+  - component: {fileID: 332420259}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1442,8 +1455,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aad38bca78398844fa3cb3301064edcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  herosPerent: {fileID: 1751352597}
+  SlotsPerent: {fileID: 1751352597}
   inventoryUI: {fileID: 73034525}
+--- !u!114 &332420258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 332420252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f439fc9a221f98469ad2553fd1f10d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SlotsPerent: {fileID: 129862967}
+  slots: []
+--- !u!114 &332420259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 332420252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a58c223d4f66d442bc364293373a8d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentSelectedHero: {fileID: 0}
 --- !u!1 &355039704
 GameObject:
   m_ObjectHideFlags: 0
@@ -1768,21 +1806,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d25bdc484cd3a8140a5c1c2c138213fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!115 &395399300
-MonoScript:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: 
-  serializedVersion: 4
-  m_Script: 
-  m_DefaultReferences: {}
-  m_Icon: {fileID: 0}
-  m_ExecutionOrder: 0
-  m_ClassName: Tile
-  m_Namespace: 
-  m_AssemblyName: Assembly-CSharp
-  m_IsEditorScript: 0
 --- !u!1 &396722200
 GameObject:
   m_ObjectHideFlags: 0
@@ -1914,7 +1937,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 438766794}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 395399300}
+  m_Script: {fileID: 631867231}
   m_Name: 
   m_EditorClassIdentifier: 
   walkable: 1
@@ -2022,7 +2045,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 475077872}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 395399300}
+  m_Script: {fileID: 631867231}
   m_Name: 
   m_EditorClassIdentifier: 
   walkable: 1
@@ -2130,7 +2153,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 526747663}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 395399300}
+  m_Script: {fileID: 631867231}
   m_Name: 
   m_EditorClassIdentifier: 
   walkable: 1
@@ -2352,7 +2375,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 539123184}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 395399300}
+  m_Script: {fileID: 631867231}
   m_Name: 
   m_EditorClassIdentifier: 
   walkable: 1
@@ -2460,7 +2483,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 547681407}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 395399300}
+  m_Script: {fileID: 631867231}
   m_Name: 
   m_EditorClassIdentifier: 
   walkable: 1
@@ -2528,6 +2551,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 547681407}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!115 &631867231
+MonoScript:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  serializedVersion: 4
+  m_Script: 
+  m_DefaultReferences: {}
+  m_Icon: {fileID: 0}
+  m_ExecutionOrder: 0
+  m_ClassName: Tile
+  m_Namespace: 
+  m_AssemblyName: Assembly-CSharp
+  m_IsEditorScript: 0
 --- !u!1 &643956280
 GameObject:
   m_ObjectHideFlags: 0
@@ -2568,7 +2606,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 643956280}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 395399300}
+  m_Script: {fileID: 631867231}
   m_Name: 
   m_EditorClassIdentifier: 
   walkable: 1
@@ -2676,7 +2714,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 650096258}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 395399300}
+  m_Script: {fileID: 631867231}
   m_Name: 
   m_EditorClassIdentifier: 
   walkable: 1
@@ -2908,7 +2946,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 807501197}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 395399300}
+  m_Script: {fileID: 631867231}
   m_Name: 
   m_EditorClassIdentifier: 
   walkable: 1
@@ -3150,7 +3188,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 889532954}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 395399300}
+  m_Script: {fileID: 631867231}
   m_Name: 
   m_EditorClassIdentifier: 
   walkable: 1
@@ -3263,7 +3301,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 926108773}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 395399300}
+  m_Script: {fileID: 631867231}
   m_Name: 
   m_EditorClassIdentifier: 
   walkable: 1
@@ -3373,7 +3411,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 928660367}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 395399300}
+  m_Script: {fileID: 631867231}
   m_Name: 
   m_EditorClassIdentifier: 
   walkable: 1
@@ -3908,14 +3946,6 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: icon
-      value: 
-      objectReference: {fileID: 277442969}
-    - target: {fileID: 0}
-      propertyPath: removeButton
-      value: 
-      objectReference: {fileID: 52063481}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b7d4965d45a02744aae5cdd910c17c48, type: 2}
   m_IsPrefabParent: 0
@@ -3959,7 +3989,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1150199130}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 395399300}
+  m_Script: {fileID: 631867231}
   m_Name: 
   m_EditorClassIdentifier: 
   walkable: 1
@@ -4072,7 +4102,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1221559932}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 395399300}
+  m_Script: {fileID: 631867231}
   m_Name: 
   m_EditorClassIdentifier: 
   walkable: 1
@@ -4180,7 +4210,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1262778610}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 395399300}
+  m_Script: {fileID: 631867231}
   m_Name: 
   m_EditorClassIdentifier: 
   walkable: 1
@@ -4469,7 +4499,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1345099059}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 395399300}
+  m_Script: {fileID: 631867231}
   m_Name: 
   m_EditorClassIdentifier: 
   walkable: 1
@@ -4577,7 +4607,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1398315975}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 395399300}
+  m_Script: {fileID: 631867231}
   m_Name: 
   m_EditorClassIdentifier: 
   walkable: 1
@@ -4685,7 +4715,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1450294093}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 395399300}
+  m_Script: {fileID: 631867231}
   m_Name: 
   m_EditorClassIdentifier: 
   walkable: 1
@@ -4917,7 +4947,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1473058402}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 395399300}
+  m_Script: {fileID: 631867231}
   m_Name: 
   m_EditorClassIdentifier: 
   walkable: 1
@@ -5542,7 +5572,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1876568291}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 395399300}
+  m_Script: {fileID: 631867231}
   m_Name: 
   m_EditorClassIdentifier: 
   walkable: 1
@@ -5940,7 +5970,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2026574494}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 395399300}
+  m_Script: {fileID: 631867231}
   m_Name: 
   m_EditorClassIdentifier: 
   walkable: 1
@@ -6158,7 +6188,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2072446468}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 395399300}
+  m_Script: {fileID: 631867231}
   m_Name: 
   m_EditorClassIdentifier: 
   walkable: 1

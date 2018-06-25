@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class InventoryUI : MonoBehaviour {
 
-    public Transform herosPerent;
+    public Transform SlotsPerent;
     public GameObject inventoryUI;
 
     Inventory Inventory;
@@ -16,7 +16,7 @@ public class InventoryUI : MonoBehaviour {
 
         Inventory.onHeroChangeCallback += UpdateUI;
 
-        slots = herosPerent.GetComponentsInChildren<InventorySlot>();
+        slots = SlotsPerent.GetComponentsInChildren<InventorySlot>();
     }
 	
 	
