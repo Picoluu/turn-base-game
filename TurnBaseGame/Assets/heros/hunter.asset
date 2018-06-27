@@ -11,5 +11,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d9d2cfc2b3f2e4e930d8b0ae9ed081, type: 3}
   m_Name: hunter
   m_EditorClassIdentifier: 
+  Slot: 0
   name: Hunter
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: bd66d987e9ae7884c901c3d1754354e4, type: 3}

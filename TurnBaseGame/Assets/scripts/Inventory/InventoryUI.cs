@@ -4,23 +4,43 @@ using UnityEngine;
 
 public class InventoryUI : MonoBehaviour {
 
+    public Transform SlotsPerent;
+    public GameObject inventoryUI;
 
     Inventory Inventory;
+
+    InventorySlot[] slots;
 	
 	void Start () {
         Inventory = Inventory.instance;
 
         Inventory.onHeroChangeCallback += UpdateUI;
+
+        slots = SlotsPerent.GetComponentsInChildren<InventorySlot>();
     }
 	
 	
 	void Update () {
-		
+        if (Input.GetButtonDown("Inventory"))
+        {
+            inventoryUI.SetActive(!inventoryUI.activeSelf);
+        }
 	}
 
 
     void UpdateUI()
     {
-        Debug.Log("updating UI");  
+        for (int i = 0; i < slots.Length; i++)
+        {
+            if (i < Inventory.heroes.Count)
+            {
+                slots[i].AddHero(Inventory.heroes[i]);
+            }
+            else
+            {
+                slots[i].ClearSlot();
+            }
+
+        }
     }
 }

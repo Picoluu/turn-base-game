@@ -6,17 +6,10 @@ public class AddItem : MonoBehaviour {
 
     public Hero hero;
 
-	
-	// Update is called once per frame
-	void Update () {
+    private void Start()
+    {
+        Debug.Log("hero added" + hero.name);
+        Inventory.instance.AddHero(hero);
+    }
 
-        if (Input.GetKey(KeyCode.Space))
-        {
-            Debug.Log("hero added" + hero.name);
-            Inventory.instance.AddHero(hero);
-
-        }
-
-		
-	}
 }
