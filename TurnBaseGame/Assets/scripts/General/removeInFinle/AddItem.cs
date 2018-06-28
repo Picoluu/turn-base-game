@@ -4,12 +4,16 @@ using UnityEngine;
 
 public class AddItem : MonoBehaviour {
 
-    public Hero hero;
+    public List<Hero> heroes;
 
     private void Start()
     {
-        Debug.Log("hero added" + hero.name);
-        Inventory.instance.AddHero(hero);
+        foreach (Hero t in heroes)
+        {
+            Debug.Log("hero added" + t.name);
+            Inventory.instance.AddHero(t);
+        }
+        
     }
 
 }

@@ -41,6 +41,7 @@ public class Inventory : MonoBehaviour {
             return false;
         }
         heroes.Add(hero);
+        hero.currentTurn = false;
 
         if (onHeroChangeCallback != null)
         {

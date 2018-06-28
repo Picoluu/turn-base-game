@@ -266,8 +266,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114479630850729006, guid: 94f66dee9ea77744c934c318ef6fa935,
-          type: 2}
+      - m_Target: {fileID: 114923980383876004}
         m_MethodName: OnRemoveButton
         m_Mode: 1
         m_Arguments:

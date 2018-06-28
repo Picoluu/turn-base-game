@@ -33,7 +33,8 @@ public class SlotsActionBar : MonoBehaviour {
     public void OnRemoveButton()
     {
         Inventory.instance.AddHero(hero);
-        // remove from array currentEquiped
+        ActionBar.instance.UnEquip(hero);      
+        ClearSlot();
     }
 
     // when the button is pressed 
@@ -46,11 +47,12 @@ public class SlotsActionBar : MonoBehaviour {
             hero.Slot = slotPos;
             ActionBar.instance.Equip(hero);
             AddHero(hero);
+            ActionBar.instance.SetFirstTurn();
         }
-        DragAndDropManager.instance.currentSelectedHero = null;
+        DragAndDropManager.instance.UnSelecteHero();
 
     }
-
+    
 
 
 }
