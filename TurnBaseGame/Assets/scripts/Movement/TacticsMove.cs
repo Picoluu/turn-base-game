@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class TacticsMove : MonoBehaviour {
 
-    // change this to numbers of heros with turns - 1
 
     public bool turn = false;
 
@@ -15,6 +14,7 @@ public class TacticsMove : MonoBehaviour {
     Tile currentTile;
 
     public bool moving = false;
+
     public int NpcMove = 1;
     public int move = 2;
     public float moveSpeed = 2f;
@@ -37,9 +37,7 @@ public class TacticsMove : MonoBehaviour {
         halfHeight = GetComponent<Collider>().bounds.extents.y;
 
         TurnManager.AddUnit(this);
-        
     }
-       
 
     // func that finds the Tile currently under the player our the NPC
 
@@ -161,8 +159,7 @@ public class TacticsMove : MonoBehaviour {
         {
             RemoveSelectableTiles();
             moving = false;
-            EndingTurns();
-
+            TurnManager.EndTurn();  
         }
     }
 
@@ -325,41 +322,16 @@ public class TacticsMove : MonoBehaviour {
 
 
 
-    void EndingTurns()
-    {
-        // todo: end turn after an action not movement
-        if (this.tag != "Player")
-        {
-            TurnManager.EndTurn();
-            
-        }
-        else
-        {
-
-            if (ActionBar.instance.numberOfHero == 3)
-            {
-                TurnManager.EndTurn();
-                //insted of setting the value of numOfPlayerTurns Here sett it in the update 
-            }
-            else
-            {
-                ActionBar.instance.HeroesTurnEnder();
-                
-            }
-        }
-    }
-
-
     public void BeginTurn()
     {
-            turn = true;
+        turn = true;
     }
 
     public void EndTurn()
     {
-            turn = false;
+        turn = false;
     }
-  
+    // todo: end turn after an action not movement
 
 
 }

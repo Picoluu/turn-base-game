@@ -43,6 +43,7 @@ public class TurnManager : MonoBehaviour {
         if (turnTeam.Count > 0)
         {
             turnTeam.Peek().BeginTurn();
+
         }
 
     }
@@ -50,26 +51,21 @@ public class TurnManager : MonoBehaviour {
 
     public static void EndTurn()
     {
-        
-            TacticsMove unit = turnTeam.Dequeue();
-            unit.EndTurn();
+        TacticsMove unit = turnTeam.Dequeue();
+        unit.EndTurn();
 
-            if (turnTeam.Count > 0f)
-            {
-                StartTurn();
+        if (turnTeam.Count > 0f)
+        {
+            StartTurn();
 
-            }
-            else
-            {
-                string team = turnKey.Dequeue();
-                turnKey.Enqueue(team);
-                InitTeamTurnQueue();
-            }
-        
-       
+        }
+        else
+        {
+            string team = turnKey.Dequeue();
+            turnKey.Enqueue(team);
+            InitTeamTurnQueue();
+        }
     }
-
-
 
     // this func will allow the units to add themselves to the Dictionary units
     // change this to a Character type

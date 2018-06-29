@@ -14,6 +14,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   currentTurn: 1
   Slot: 3
 =======
@@ -26,5 +27,8 @@ MonoBehaviour:
   currentTurn: 1
   Slot: 3
 >>>>>>> parent of 2b5624f... Merge branch 'master' of https://github.com/Picoluu/turn-base-game
+=======
+  Slot: 0
+>>>>>>> parent of e8f215a... action bar hero turns
   name: Hunter
   icon: {fileID: 21300000, guid: bd66d987e9ae7884c901c3d1754354e4, type: 3}

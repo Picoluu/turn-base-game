@@ -13,8 +13,6 @@ public class playerMove : TacticsMove {
 	
 	void Update ()
     {
-
-
         if (!turn)
         {
             return;

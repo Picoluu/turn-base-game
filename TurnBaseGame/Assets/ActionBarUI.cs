@@ -44,4 +44,16 @@ public class ActionBarUI : MonoBehaviour {
             }
     }
 
+	
+	void Update () {
+		
+	}
+
+
+    void UpdateUI()
+    {
+
+
+    }
+
 }

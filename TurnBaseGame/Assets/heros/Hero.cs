@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "New item",menuName = "ActionBar/Hero")]
-public class Hero : ScriptableObject 
+public class Hero : ScriptableObject
  {
-    public bool currentTurn = false;
 
     public ActionBarSlots Slot = ActionBarSlots.NotOnActionBar;
 
     new public string name = "New item";
     public Sprite icon = null;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -22,11 +22,15 @@ public class Hero : ScriptableObject
         currentTurn = false;
     }
 
+=======
+>>>>>>> parent of e8f215a... action bar hero turns
     public void Selected()
-    {       
+    {
+        
             DragAndDropManager.instance.SelectedHero(this);
             Debug.Log("Selecting" + name);
     }
+<<<<<<< HEAD
 
 
 }
@@ -49,6 +53,10 @@ public class Hero : ScriptableObject
 >>>>>>> parent of 354d52a... drag n drop first fase
 =======
 >>>>>>> parent of 2b5624f... Merge branch 'master' of https://github.com/Picoluu/turn-base-game
+=======
+       
+ }
+>>>>>>> parent of e8f215a... action bar hero turns
 
         Debug.Log("equping" + name);
     }
