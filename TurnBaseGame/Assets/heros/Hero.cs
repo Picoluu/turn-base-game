@@ -5,6 +5,10 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New item",menuName = "ActionBar/Hero")]
 public class Hero : ScriptableObject
  {
+<<<<<<< HEAD
+=======
+    public bool currentTurn = false;
+>>>>>>> parent of 2b5624f... Merge branch 'master' of https://github.com/Picoluu/turn-base-game
 
     public ActionBarSlots Slot = ActionBarSlots.NotOnActionBar;
 
@@ -15,6 +19,9 @@ public class Hero : ScriptableObject
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 2b5624f... Merge branch 'master' of https://github.com/Picoluu/turn-base-game
 =======
 >>>>>>> parent of 2b5624f... Merge branch 'master' of https://github.com/Picoluu/turn-base-game
      void Awake()
@@ -34,6 +41,7 @@ public class Hero : ScriptableObject
 
 
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     public void Selected()
@@ -57,6 +65,8 @@ public class Hero : ScriptableObject
        
  }
 >>>>>>> parent of e8f215a... action bar hero turns
+=======
+>>>>>>> parent of 2b5624f... Merge branch 'master' of https://github.com/Picoluu/turn-base-game
 
         Debug.Log("equping" + name);
     }

@@ -240,8 +240,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+<<<<<<< HEAD
       - m_Target: {fileID: 114479630850729006, guid: 94f66dee9ea77744c934c318ef6fa935,
           type: 2}
+=======
+      - m_Target: {fileID: 114923980383876004}
+>>>>>>> parent of 2b5624f... Merge branch 'master' of https://github.com/Picoluu/turn-base-game
         m_MethodName: OnRemoveButton
         m_Mode: 1
         m_Arguments:

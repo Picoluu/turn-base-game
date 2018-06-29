@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.43667546, g: 0.48427135, b: 0.5645225, a: 1}
+  m_IndirectSpecularColor: {r: 0.4366757, g: 0.48427194, b: 0.5645252, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -118,6 +118,7 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
     type: 2}
   m_PrefabInternal: {fileID: 692013058}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -251,6 +252,8 @@ MonoBehaviour:
 >>>>>>> parent of 2b5624f... Merge branch 'master' of https://github.com/Picoluu/turn-base-game
 =======
 >>>>>>> parent of e8f215a... action bar hero turns
+=======
+>>>>>>> parent of 2b5624f... Merge branch 'master' of https://github.com/Picoluu/turn-base-game
 --- !u!1 &73034525
 GameObject:
   m_ObjectHideFlags: 0
@@ -529,6 +532,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> parent of e8f215a... action bar hero turns
@@ -650,6 +654,8 @@ MeshFilter:
 >>>>>>> parent of 2b5624f... Merge branch 'master' of https://github.com/Picoluu/turn-base-game
 =======
 >>>>>>> parent of e8f215a... action bar hero turns
+=======
+>>>>>>> parent of 2b5624f... Merge branch 'master' of https://github.com/Picoluu/turn-base-game
 --- !u!1001 &164983483
 Prefab:
   m_ObjectHideFlags: 0
@@ -956,6 +962,7 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> parent of e8f215a... action bar hero turns
@@ -1220,6 +1227,8 @@ MonoBehaviour:
 >>>>>>> parent of 2b5624f... Merge branch 'master' of https://github.com/Picoluu/turn-base-game
 =======
 >>>>>>> parent of e8f215a... action bar hero turns
+=======
+>>>>>>> parent of 2b5624f... Merge branch 'master' of https://github.com/Picoluu/turn-base-game
 --- !u!1 &282840810
 GameObject:
   m_ObjectHideFlags: 0
@@ -1310,6 +1319,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 45, y: 45, z: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1434,6 +1444,8 @@ MeshFilter:
 >>>>>>> parent of 2b5624f... Merge branch 'master' of https://github.com/Picoluu/turn-base-game
 =======
 >>>>>>> parent of e8f215a... action bar hero turns
+=======
+>>>>>>> parent of 2b5624f... Merge branch 'master' of https://github.com/Picoluu/turn-base-game
 --- !u!1 &332420252
 GameObject:
   m_ObjectHideFlags: 0
@@ -1548,6 +1560,7 @@ MonoBehaviour:
 MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -1577,6 +1590,8 @@ MonoBehaviour:
 --- !u!1 &355039704
 GameObject:
 >>>>>>> 354d52a9260a1a6d2dce1ed5d0588bdd1ebdcb58
+=======
+>>>>>>> parent of 2b5624f... Merge branch 'master' of https://github.com/Picoluu/turn-base-game
 =======
 >>>>>>> parent of 2b5624f... Merge branch 'master' of https://github.com/Picoluu/turn-base-game
   m_ObjectHideFlags: 0
@@ -1926,6 +1941,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d25bdc484cd3a8140a5c1c2c138213fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!115 &395399300
@@ -2321,6 +2337,15 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 1233623229}
 >>>>>>> parent of 2b5624f... Merge branch 'master' of https://github.com/Picoluu/turn-base-game
+=======
+  currentEquiped: []
+  numberOfHero: 0
+--- !u!4 &526747664 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4487647583287180, guid: 203fa2683e8f8e046bd4f2f9c8292f94,
+    type: 2}
+  m_PrefabInternal: {fileID: 1233623229}
+>>>>>>> parent of 2b5624f... Merge branch 'master' of https://github.com/Picoluu/turn-base-game
 --- !u!1001 &532519570
 Prefab:
   m_ObjectHideFlags: 0
@@ -2435,6 +2460,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 94f66dee9ea77744c934c318ef6fa935, type: 2}
   m_IsPrefabParent: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -4973,97 +4999,110 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 129862967}
+=======
+--- !u!1001 &692013058
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1751352597}
+>>>>>>> parent of 2b5624f... Merge branch 'master' of https://github.com/Picoluu/turn-base-game
     m_Modifications:
-    - target: {fileID: 224253212772351202, guid: b7d4965d45a02744aae5cdd910c17c48,
+    - target: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
         type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224253212772351202, guid: b7d4965d45a02744aae5cdd910c17c48,
+    - target: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
         type: 2}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224253212772351202, guid: b7d4965d45a02744aae5cdd910c17c48,
+    - target: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
         type: 2}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224253212772351202, guid: b7d4965d45a02744aae5cdd910c17c48,
+    - target: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
         type: 2}
       propertyPath: m_LocalRotation.x
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 224253212772351202, guid: b7d4965d45a02744aae5cdd910c17c48,
+    - target: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
         type: 2}
       propertyPath: m_LocalRotation.y
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 224253212772351202, guid: b7d4965d45a02744aae5cdd910c17c48,
+    - target: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
         type: 2}
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 224253212772351202, guid: b7d4965d45a02744aae5cdd910c17c48,
+    - target: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
         type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 224253212772351202, guid: b7d4965d45a02744aae5cdd910c17c48,
+    - target: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
         type: 2}
       propertyPath: m_RootOrder
+<<<<<<< HEAD
       value: 0
+=======
+      value: 12
+>>>>>>> parent of 2b5624f... Merge branch 'master' of https://github.com/Picoluu/turn-base-game
       objectReference: {fileID: 0}
-    - target: {fileID: 224253212772351202, guid: b7d4965d45a02744aae5cdd910c17c48,
+    - target: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
         type: 2}
       propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224253212772351202, guid: b7d4965d45a02744aae5cdd910c17c48,
+    - target: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
         type: 2}
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224253212772351202, guid: b7d4965d45a02744aae5cdd910c17c48,
+    - target: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
         type: 2}
       propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224253212772351202, guid: b7d4965d45a02744aae5cdd910c17c48,
+    - target: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
         type: 2}
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224253212772351202, guid: b7d4965d45a02744aae5cdd910c17c48,
+    - target: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
         type: 2}
       propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224253212772351202, guid: b7d4965d45a02744aae5cdd910c17c48,
+    - target: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
         type: 2}
       propertyPath: m_AnchorMin.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224253212772351202, guid: b7d4965d45a02744aae5cdd910c17c48,
+    - target: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
         type: 2}
       propertyPath: m_AnchorMax.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224253212772351202, guid: b7d4965d45a02744aae5cdd910c17c48,
+    - target: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
         type: 2}
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224253212772351202, guid: b7d4965d45a02744aae5cdd910c17c48,
+    - target: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
         type: 2}
       propertyPath: m_Pivot.x
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 224253212772351202, guid: b7d4965d45a02744aae5cdd910c17c48,
+    - target: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
         type: 2}
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
     - target: {fileID: 0}
       propertyPath: icon
@@ -5073,9 +5112,31 @@ Prefab:
       propertyPath: removeButton
       value: 
       objectReference: {fileID: 52063481}
+=======
+    - target: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
+        type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
+        type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1484897333962700, guid: 94f66dee9ea77744c934c318ef6fa935, type: 2}
+      propertyPath: m_Name
+      value: Slot (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
+        type: 2}
+      propertyPath: m_LocalScale.z
+      value: 0.99999994
+      objectReference: {fileID: 0}
+>>>>>>> parent of 2b5624f... Merge branch 'master' of https://github.com/Picoluu/turn-base-game
     m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: b7d4965d45a02744aae5cdd910c17c48, type: 2}
+  m_ParentPrefab: {fileID: 100100000, guid: 94f66dee9ea77744c934c318ef6fa935, type: 2}
   m_IsPrefabParent: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 --- !u!1 &1150199130
@@ -5376,6 +5437,45 @@ MonoBehaviour:
 --- !u!65 &1221559935
 BoxCollider:
 <<<<<<< HEAD
+=======
+--- !u!224 &716892514 stripped
+RectTransform:
+  m_PrefabParentObject: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
+    type: 2}
+  m_PrefabInternal: {fileID: 1264667836}
+--- !u!115 &741008523
+MonoScript:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  serializedVersion: 4
+  m_Script: 
+  m_DefaultReferences: {}
+  m_Icon: {fileID: 0}
+  m_ExecutionOrder: 0
+  m_ClassName: Tile
+  m_Namespace: 
+  m_AssemblyName: Assembly-CSharp
+  m_IsEditorScript: 0
+--- !u!224 &828943566 stripped
+RectTransform:
+  m_PrefabParentObject: {fileID: 224253212772351202, guid: b7d4965d45a02744aae5cdd910c17c48,
+    type: 2}
+  m_PrefabInternal: {fileID: 1117011313}
+--- !u!224 &842457640 stripped
+RectTransform:
+  m_PrefabParentObject: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
+    type: 2}
+  m_PrefabInternal: {fileID: 1966503576}
+--- !u!224 &869550008 stripped
+RectTransform:
+  m_PrefabParentObject: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
+    type: 2}
+  m_PrefabInternal: {fileID: 81847561}
+--- !u!1001 &875488890
+Prefab:
+>>>>>>> parent of 2b5624f... Merge branch 'master' of https://github.com/Picoluu/turn-base-game
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -5384,6 +5484,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
+<<<<<<< HEAD
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1221559936
@@ -5644,6 +5745,254 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &1262778615
 MeshFilter:
+=======
+  m_Modification:
+    m_TransformParent: {fileID: 129862967}
+    m_Modifications:
+    - target: {fileID: 224253212772351202, guid: b7d4965d45a02744aae5cdd910c17c48,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224253212772351202, guid: b7d4965d45a02744aae5cdd910c17c48,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224253212772351202, guid: b7d4965d45a02744aae5cdd910c17c48,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224253212772351202, guid: b7d4965d45a02744aae5cdd910c17c48,
+        type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224253212772351202, guid: b7d4965d45a02744aae5cdd910c17c48,
+        type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224253212772351202, guid: b7d4965d45a02744aae5cdd910c17c48,
+        type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224253212772351202, guid: b7d4965d45a02744aae5cdd910c17c48,
+        type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224253212772351202, guid: b7d4965d45a02744aae5cdd910c17c48,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 224253212772351202, guid: b7d4965d45a02744aae5cdd910c17c48,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224253212772351202, guid: b7d4965d45a02744aae5cdd910c17c48,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224253212772351202, guid: b7d4965d45a02744aae5cdd910c17c48,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224253212772351202, guid: b7d4965d45a02744aae5cdd910c17c48,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224253212772351202, guid: b7d4965d45a02744aae5cdd910c17c48,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224253212772351202, guid: b7d4965d45a02744aae5cdd910c17c48,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224253212772351202, guid: b7d4965d45a02744aae5cdd910c17c48,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224253212772351202, guid: b7d4965d45a02744aae5cdd910c17c48,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224253212772351202, guid: b7d4965d45a02744aae5cdd910c17c48,
+        type: 2}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224253212772351202, guid: b7d4965d45a02744aae5cdd910c17c48,
+        type: 2}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224253212772351202, guid: b7d4965d45a02744aae5cdd910c17c48,
+        type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1.0000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 224253212772351202, guid: b7d4965d45a02744aae5cdd910c17c48,
+        type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.99999994
+      objectReference: {fileID: 0}
+    - target: {fileID: 224253212772351202, guid: b7d4965d45a02744aae5cdd910c17c48,
+        type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1.0000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 1205721115566556, guid: b7d4965d45a02744aae5cdd910c17c48, type: 2}
+      propertyPath: m_Name
+      value: SlotActionBar (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: b7d4965d45a02744aae5cdd910c17c48, type: 2}
+  m_IsPrefabParent: 0
+--- !u!224 &907513916 stripped
+RectTransform:
+  m_PrefabParentObject: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
+    type: 2}
+  m_PrefabInternal: {fileID: 1029661556}
+--- !u!1001 &943592436
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1751352597}
+    m_Modifications:
+    - target: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
+        type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
+        type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
+        type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
+        type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
+        type: 2}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
+        type: 2}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
+        type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
+        type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1484897333962700, guid: 94f66dee9ea77744c934c318ef6fa935, type: 2}
+      propertyPath: m_Name
+      value: Slot (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
+        type: 2}
+      propertyPath: m_LocalScale.z
+      value: 0.99999994
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 94f66dee9ea77744c934c318ef6fa935, type: 2}
+  m_IsPrefabParent: 0
+--- !u!224 &1010652839 stripped
+RectTransform:
+  m_PrefabParentObject: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
+    type: 2}
+  m_PrefabInternal: {fileID: 378101798}
+--- !u!1001 &1029661556
+Prefab:
+>>>>>>> parent of 2b5624f... Merge branch 'master' of https://github.com/Picoluu/turn-base-game
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -5760,6 +6109,7 @@ Prefab:
       propertyPath: m_Name
       value: Slot (11)
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
         type: 2}
       propertyPath: m_LocalScale.z
@@ -5997,6 +6347,94 @@ MonoBehaviour:
   h: 0
 --- !u!65 &1398315978
 BoxCollider:
+=======
+    - target: {fileID: 224253212772351202, guid: b7d4965d45a02744aae5cdd910c17c48,
+        type: 2}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: b7d4965d45a02744aae5cdd910c17c48, type: 2}
+  m_IsPrefabParent: 0
+--- !u!224 &1170156950 stripped
+RectTransform:
+  m_PrefabParentObject: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
+    type: 2}
+  m_PrefabInternal: {fileID: 164983483}
+--- !u!1001 &1233623229
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 114395656653378854, guid: 203fa2683e8f8e046bd4f2f9c8292f94,
+        type: 2}
+      propertyPath: heroes.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4651241542404144, guid: 203fa2683e8f8e046bd4f2f9c8292f94, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4651241542404144, guid: 203fa2683e8f8e046bd4f2f9c8292f94, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4651241542404144, guid: 203fa2683e8f8e046bd4f2f9c8292f94, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4651241542404144, guid: 203fa2683e8f8e046bd4f2f9c8292f94, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4651241542404144, guid: 203fa2683e8f8e046bd4f2f9c8292f94, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4651241542404144, guid: 203fa2683e8f8e046bd4f2f9c8292f94, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4651241542404144, guid: 203fa2683e8f8e046bd4f2f9c8292f94, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4651241542404144, guid: 203fa2683e8f8e046bd4f2f9c8292f94, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114395656653378854, guid: 203fa2683e8f8e046bd4f2f9c8292f94,
+        type: 2}
+      propertyPath: heroes.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: e5229f4f96318b94bb56e43408c7dab9,
+        type: 2}
+    - target: {fileID: 114395656653378854, guid: 203fa2683e8f8e046bd4f2f9c8292f94,
+        type: 2}
+      propertyPath: heroes.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: b30e1a0778b4ab9479bc785f97ef4502,
+        type: 2}
+    - target: {fileID: 114395656653378854, guid: 203fa2683e8f8e046bd4f2f9c8292f94,
+        type: 2}
+      propertyPath: heroes.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: 1c0d61775302cb54cbb5995a28cb6577,
+        type: 2}
+    - target: {fileID: 114395656653378854, guid: 203fa2683e8f8e046bd4f2f9c8292f94,
+        type: 2}
+      propertyPath: heroes.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: 3933b6a064bba0243bb653dfe95909f3,
+        type: 2}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 203fa2683e8f8e046bd4f2f9c8292f94, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &1264667836
+Prefab:
+>>>>>>> parent of 2b5624f... Merge branch 'master' of https://github.com/Picoluu/turn-base-game
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -6005,6 +6443,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
+<<<<<<< HEAD
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1398315979
@@ -6334,113 +6773,190 @@ MeshFilter:
   m_GameObject: {fileID: 1398315975}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1450294093
+=======
+  m_Modification:
+    m_TransformParent: {fileID: 1751352597}
+    m_Modifications:
+    - target: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
+        type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
+        type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
+        type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
+        type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
+        type: 2}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
+        type: 2}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
+        type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
+        type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1484897333962700, guid: 94f66dee9ea77744c934c318ef6fa935, type: 2}
+      propertyPath: m_Name
+      value: Slot (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
+        type: 2}
+      propertyPath: m_LocalScale.z
+      value: 0.99999994
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 94f66dee9ea77744c934c318ef6fa935, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1 &1283615455
+>>>>>>> parent of 2b5624f... Merge branch 'master' of https://github.com/Picoluu/turn-base-game
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 1450294094}
-  - component: {fileID: 1450294098}
-  - component: {fileID: 1450294097}
-  - component: {fileID: 1450294096}
-  - component: {fileID: 1450294095}
+  - component: {fileID: 1283615458}
+  - component: {fileID: 1283615457}
+  - component: {fileID: 1283615456}
   m_Layer: 0
-  m_Name: Tile (2)
-  m_TagString: Tile
+  m_Name: EventSystem
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1450294094
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1450294093}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 0.5, z: 1.5}
-  m_Children: []
-  m_Father: {fileID: 1816344948}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1450294095
+--- !u!114 &1283615456
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1450294093}
+  m_GameObject: {fileID: 1283615455}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 631867231}
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkable: 1
-  current: 0
-  target: 0
-  selectable: 0
-  adjacencyList: []
-  visited: 0
-  parent: {fileID: 0}
-  distance: 0
-  f: 0
-  g: 0
-  h: 0
---- !u!65 &1450294096
-BoxCollider:
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1283615457
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1450294093}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_GameObject: {fileID: 1283615455}
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &1450294097
-MeshRenderer:
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &1283615458
+Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1450294093}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
-  m_Materials:
-  - {fileID: 2100000, guid: 2c534230a9ba0804ba406962ead82884, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &1450294098
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 1450294093}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+=======
+  m_GameObject: {fileID: 1283615455}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> parent of 2b5624f... Merge branch 'master' of https://github.com/Picoluu/turn-base-game
 --- !u!224 &1468785637 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 224253212772351202, guid: b7d4965d45a02744aae5cdd910c17c48,
@@ -6568,6 +7084,7 @@ Prefab:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> parent of e8f215a... action bar hero turns
@@ -6689,6 +7206,8 @@ MeshFilter:
 >>>>>>> parent of 2b5624f... Merge branch 'master' of https://github.com/Picoluu/turn-base-game
 =======
 >>>>>>> parent of e8f215a... action bar hero turns
+=======
+>>>>>>> parent of 2b5624f... Merge branch 'master' of https://github.com/Picoluu/turn-base-game
 --- !u!224 &1477448253 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
@@ -6812,12 +7331,57 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b7d4965d45a02744aae5cdd910c17c48, type: 2}
+<<<<<<< HEAD
+=======
   m_IsPrefabParent: 0
 --- !u!224 &1622601215 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 224253212772351202, guid: b7d4965d45a02744aae5cdd910c17c48,
     type: 2}
   m_PrefabInternal: {fileID: 875488890}
+--- !u!1001 &1630137416
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4154955981546268, guid: 6680f484b9226bf478de0a4f7d0b9558, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4154955981546268, guid: 6680f484b9226bf478de0a4f7d0b9558, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4154955981546268, guid: 6680f484b9226bf478de0a4f7d0b9558, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4154955981546268, guid: 6680f484b9226bf478de0a4f7d0b9558, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4154955981546268, guid: 6680f484b9226bf478de0a4f7d0b9558, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4154955981546268, guid: 6680f484b9226bf478de0a4f7d0b9558, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4154955981546268, guid: 6680f484b9226bf478de0a4f7d0b9558, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4154955981546268, guid: 6680f484b9226bf478de0a4f7d0b9558, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 6680f484b9226bf478de0a4f7d0b9558, type: 2}
+>>>>>>> parent of 2b5624f... Merge branch 'master' of https://github.com/Picoluu/turn-base-game
+  m_IsPrefabParent: 0
 --- !u!1001 &1709952133
 Prefab:
   m_ObjectHideFlags: 0
@@ -7108,6 +7672,7 @@ RectTransform:
   m_SizeDelta: {x: 30, y: 55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1751352598
+<<<<<<< HEAD
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -7243,101 +7808,63 @@ Transform:
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1876568293
+=======
+>>>>>>> parent of 2b5624f... Merge branch 'master' of https://github.com/Picoluu/turn-base-game
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1876568291}
+  m_GameObject: {fileID: 1751352596}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 631867231}
+  m_Script: {fileID: -2095666955, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkable: 1
-  current: 0
-  target: 0
-  selectable: 0
-  adjacencyList: []
-  visited: 0
-  parent: {fileID: 0}
-  distance: 0
-  f: 0
-  g: 0
-  h: 0
---- !u!65 &1876568294
-BoxCollider:
+  m_Padding:
+    m_Left: 12
+    m_Right: 0
+    m_Top: 12
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_StartCorner: 0
+  m_StartAxis: 0
+  m_CellSize: {x: 25, y: 25}
+  m_Spacing: {x: -1, y: 0}
+  m_Constraint: 0
+  m_ConstraintCount: 2
+--- !u!114 &1751352599
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1876568291}
+  m_GameObject: {fileID: 1751352596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &1876568295
-MeshRenderer:
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: 642575424bf7083498b59a8e94e82ff2, type: 3}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1751352600
+CanvasRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1876568291}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
-  m_Materials:
-  - {fileID: 2100000, guid: 2c534230a9ba0804ba406962ead82884, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &1876568296
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1876568291}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1933131907
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1933131908}
-  m_Layer: 0
-  m_Name: row4
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1933131908
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 1933131907}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 4.5}
@@ -7351,6 +7878,19 @@ Transform:
   m_Father: {fileID: 421938396}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+  m_GameObject: {fileID: 1751352596}
+--- !u!224 &1766479865 stripped
+RectTransform:
+  m_PrefabParentObject: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
+    type: 2}
+  m_PrefabInternal: {fileID: 943592436}
+--- !u!224 &1872879493 stripped
+RectTransform:
+  m_PrefabParentObject: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
+    type: 2}
+  m_PrefabInternal: {fileID: 169743964}
+>>>>>>> parent of 2b5624f... Merge branch 'master' of https://github.com/Picoluu/turn-base-game
 --- !u!1001 &1966503576
 Prefab:
   m_ObjectHideFlags: 0
@@ -7451,6 +7991,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 94f66dee9ea77744c934c318ef6fa935, type: 2}
   m_IsPrefabParent: 0
+<<<<<<< HEAD
 --- !u!1 &1995550182
 GameObject:
   m_ObjectHideFlags: 0
@@ -7484,6 +8025,8 @@ Transform:
   m_Father: {fileID: 421938396}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> parent of 2b5624f... Merge branch 'master' of https://github.com/Picoluu/turn-base-game
 --- !u!224 &2004462786 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
@@ -7608,6 +8151,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b7d4965d45a02744aae5cdd910c17c48, type: 2}
   m_IsPrefabParent: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -7837,11 +8381,14 @@ Transform:
 >>>>>>> parent of 2b5624f... Merge branch 'master' of https://github.com/Picoluu/turn-base-game
 =======
 >>>>>>> parent of e8f215a... action bar hero turns
+=======
+>>>>>>> parent of 2b5624f... Merge branch 'master' of https://github.com/Picoluu/turn-base-game
 --- !u!224 &2060411750 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 224735665636427922, guid: 94f66dee9ea77744c934c318ef6fa935,
     type: 2}
   m_PrefabInternal: {fileID: 1096444728}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -8009,3 +8556,5 @@ Prefab:
 >>>>>>> parent of 2b5624f... Merge branch 'master' of https://github.com/Picoluu/turn-base-game
 =======
 >>>>>>> parent of e8f215a... action bar hero turns
+=======
+>>>>>>> parent of 2b5624f... Merge branch 'master' of https://github.com/Picoluu/turn-base-game

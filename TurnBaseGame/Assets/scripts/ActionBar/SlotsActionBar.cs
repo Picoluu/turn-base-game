@@ -33,7 +33,12 @@ public class SlotsActionBar : MonoBehaviour {
     public void OnRemoveButton()
     {
         Inventory.instance.AddHero(hero);
+<<<<<<< HEAD
         // remove from array currentEquiped
+=======
+        ActionBar.instance.UnEquip(hero);      
+        ClearSlot();
+>>>>>>> parent of 2b5624f... Merge branch 'master' of https://github.com/Picoluu/turn-base-game
     }
 
     // when the button is pressed 
@@ -46,11 +51,20 @@ public class SlotsActionBar : MonoBehaviour {
             hero.Slot = slotPos;
             ActionBar.instance.Equip(hero);
             AddHero(hero);
+<<<<<<< HEAD
         }
         DragAndDropManager.instance.currentSelectedHero = null;
 
     }
 
+=======
+            ActionBar.instance.SetFirstTurn();
+        }
+        DragAndDropManager.instance.UnSelecteHero();
+
+    }
+    
+>>>>>>> parent of 2b5624f... Merge branch 'master' of https://github.com/Picoluu/turn-base-game
 
 
 }
