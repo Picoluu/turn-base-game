@@ -1,9 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-<<<<<<< HEAD
 using System.Linq;
-=======
->>>>>>> 354d52a9260a1a6d2dce1ed5d0588bdd1ebdcb58
 using UnityEngine;
 
 public class ActionBar : MonoBehaviour {
@@ -30,7 +27,6 @@ public class ActionBar : MonoBehaviour {
 
     #endregion
 
-<<<<<<< HEAD
     public Hero[] currentEquiped;
     public int numberOfHero;
 
@@ -55,16 +51,11 @@ public class ActionBar : MonoBehaviour {
 
         }
     }
-=======
-    Hero[] currentEquiped;
-
->>>>>>> 354d52a9260a1a6d2dce1ed5d0588bdd1ebdcb58
 
     private void Start()
     {
         int numSlots = System.Enum.GetNames(typeof(ActionBarSlots)).Length;
         currentEquiped = new Hero[numSlots];
-<<<<<<< HEAD
 
     }
 
@@ -86,8 +77,6 @@ public class ActionBar : MonoBehaviour {
         }
 
 
-=======
->>>>>>> 354d52a9260a1a6d2dce1ed5d0588bdd1ebdcb58
     }
 
 
@@ -103,7 +92,6 @@ public class ActionBar : MonoBehaviour {
     public void UnEquip(Hero newHero)
     {
         currentEquiped[newHero.Slot] = null;
-<<<<<<< HEAD
        
     }
 
@@ -157,6 +145,7 @@ public class ActionBar : MonoBehaviour {
         }
 
     }
+<<<<<<< HEAD
 =======
         Inventory.instance.AddHero(newHero);
 =======
@@ -167,6 +156,8 @@ public class ActionBar : MonoBehaviour {
     }
 
 >>>>>>> 354d52a9260a1a6d2dce1ed5d0588bdd1ebdcb58
+=======
+>>>>>>> parent of 2b5624f... Merge branch 'master' of https://github.com/Picoluu/turn-base-game
 }
 
 public enum ActionBarSlots {FirstHero,SecendHero,TheirdHero,ForthHero,NotOnActionBar}

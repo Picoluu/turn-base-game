@@ -5,10 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New item",menuName = "ActionBar/Hero")]
 public class Hero : ScriptableObject 
  {
-<<<<<<< HEAD
     public bool currentTurn = false;
-=======
->>>>>>> 354d52a9260a1a6d2dce1ed5d0588bdd1ebdcb58
 
     public ActionBarSlots Slot = ActionBarSlots.NotOnActionBar;
 
@@ -17,6 +14,9 @@ public class Hero : ScriptableObject
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 2b5624f... Merge branch 'master' of https://github.com/Picoluu/turn-base-game
      void Awake()
     {
         currentTurn = false;
@@ -30,6 +30,7 @@ public class Hero : ScriptableObject
 
 
 }
+<<<<<<< HEAD
 =======
     public void Selected()
     {
@@ -46,6 +47,8 @@ public class Hero : ScriptableObject
         // useing the hero (probly equping to actionBar)
         // add a reference to action bar andd add the hero to it 
 >>>>>>> parent of 354d52a... drag n drop first fase
+=======
+>>>>>>> parent of 2b5624f... Merge branch 'master' of https://github.com/Picoluu/turn-base-game
 
         Debug.Log("equping" + name);
     }
