@@ -93,6 +93,7 @@ public class ActionBar : MonoBehaviour {
 
     public void Equip(Hero newHero)
     {
+<<<<<<< HEAD
         int slotIndex = (int)newHero.Slot;
         currentEquiped[slotIndex] = newHero;
         Inventory.instance.RemoveHero(newHero);
@@ -158,13 +159,17 @@ public class ActionBar : MonoBehaviour {
     }
 =======
         Inventory.instance.AddHero(newHero);
+=======
+        int slotIndex = (int)newHero.Slot - 1;
+>>>>>>> parent of 354d52a... drag n drop first fase
 
+        currentEquiped[slotIndex -1] = newHero;
     }
 
 >>>>>>> 354d52a9260a1a6d2dce1ed5d0588bdd1ebdcb58
 }
 
-public enum ActionBarSlots {FirstHero,SecendHero,TheirdHero,ForthHero}
+public enum ActionBarSlots {FirstHero,SecendHero,TheirdHero,ForthHero,NotOnActionBar}
 
 
 

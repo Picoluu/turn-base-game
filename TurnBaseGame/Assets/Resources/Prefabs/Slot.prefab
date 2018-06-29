@@ -239,7 +239,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114479630850729006}
-        m_MethodName: SelectedHero
+        m_MethodName: UseHero
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

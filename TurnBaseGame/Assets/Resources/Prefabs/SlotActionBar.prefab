@@ -37,7 +37,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 224253212772351202}
-  - component: {fileID: 114923980383876004}
   m_Layer: 5
   m_Name: SlotActionBar
   m_TagString: Untagged
@@ -118,18 +117,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114717743241618144}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 114923980383876004}
-        m_MethodName: EquipHero
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &114438917843020376
@@ -213,20 +201,6 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &114923980383876004
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1205721115566556}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b23f3e89d6034c047b1667391cb291b1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  slotPos: 0
-  icon: {fileID: 114752121906249470}
-  removeButton: {fileID: 114992374973826024}
 --- !u!114 &114992374973826024
 MonoBehaviour:
   m_ObjectHideFlags: 1

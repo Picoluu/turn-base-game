@@ -12,6 +12,7 @@ public class InventorySlot : MonoBehaviour {
     public void AddHero(Hero newhero)
     {
         hero = newhero;
+
         icon.sprite = hero.icon;
         icon.enabled = true;
         removeButton.interactable = true;
@@ -20,6 +21,7 @@ public class InventorySlot : MonoBehaviour {
     public void ClearSlot()
     {
         hero = null;
+
         icon.sprite = null;
         icon.enabled = false;
         removeButton.interactable = false;
@@ -30,11 +32,11 @@ public class InventorySlot : MonoBehaviour {
         Inventory.instance.RemoveHero(hero);
     }
 
-    public void SelectedHero()
+    public void UseHero()
     {
         if (hero != null)
         {
-            hero.Selected();
+            hero.Use();
         }
 
     }

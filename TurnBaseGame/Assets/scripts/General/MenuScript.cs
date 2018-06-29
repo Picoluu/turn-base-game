@@ -37,26 +37,4 @@ public class MenuScript
 
     }
 
-    [MenuItem("Tools/Remove Tile Script")]
-
-    public static void RemoveTileScript()
-    {
-        GameObject[] tiles = GameObject.FindGameObjectsWithTag("Tile");
-
-        foreach (GameObject t in tiles)
-        {
-            if (t.GetComponent<Tile>() != null)
-            {
-                t.GetComponent<Tile>().RemoveScript();
-            }
-            
-
-        }
-
-        
-
-    }
-
-
-
 }
